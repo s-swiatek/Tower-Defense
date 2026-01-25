@@ -5,11 +5,15 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:projektprojekt"
     Shell.FlyoutBehavior="Flyout"
-    Title="projektprojekt">
+    Title="projektprojekt"
+    Shell.NavBarIsVisible="False">
 
     <ShellContent
-        Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
+
+    <ShellContent
+    ContentTemplate="{DataTemplate local:Options}"
+    Route="Options" />
 
 </Shell>

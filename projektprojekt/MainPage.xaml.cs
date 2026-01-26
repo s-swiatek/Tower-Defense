@@ -10,14 +10,19 @@ namespace projektprojekt
             InitializeComponent();
         }
 
-        private void ImageButton_Clicked(object sender, EventArgs e)
+        private void exitbtn_Clicked(object sender, EventArgs e)
         {
             Application.Current.Quit();
         }
 
-        private async void ImageButton_Clicked_1(object sender, EventArgs e)
+        private async void options_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Options());
+        }
+
+        private async void startbtn_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new GameScreen());
         }
     }
 

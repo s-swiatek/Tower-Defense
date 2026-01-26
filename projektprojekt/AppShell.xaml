@@ -16,4 +16,8 @@
     ContentTemplate="{DataTemplate local:Options}"
     Route="Options" />
 
+    <ShellContent
+ContentTemplate="{DataTemplate local:GameScreen}"
+Route="GameScreen" />
+
 </Shell>

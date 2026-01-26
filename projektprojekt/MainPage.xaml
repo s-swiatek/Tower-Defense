@@ -14,29 +14,33 @@
             RowDefinitions="Auto,Auto,Auto">
 
             <ImageButton Source="startbtn_removebg_preview.png"
+                         x:Name="startbtn"
                    Grid.Row="0"
                    Grid.Column="1"
                    Aspect="AspectFit"
                    WidthRequest="180"
                    HeightRequest="72"
-                   HorizontalOptions="Center"/>
+                   HorizontalOptions="Center"
+                         Clicked="startbtn_Clicked"/>
 
             <ImageButton Source="options_removebg_preview.png"
+                         x:Name="optionsbtn"
                    Grid.Row="1"
                    Grid.Column="1"
                    Aspect="AspectFit"
                    WidthRequest="180"
                    HeightRequest="72"
                    HorizontalOptions="Center"
-                   Clicked="ImageButton_Clicked_1"/>
+                   Clicked="options_Clicked"/>
 
             <ImageButton Source="exitbtn_removebg_preview.png"
+                         x:Name="exitbtn"
                    Grid.Row="2"
                    Grid.Column="1"
                    Aspect="AspectFit"
                    WidthRequest="180"
                    HeightRequest="72"
-                   HorizontalOptions="Center" Clicked="ImageButton_Clicked"/>
+                   HorizontalOptions="Center" Clicked="exitbtn_Clicked"/>
 
         </Grid>
     </ScrollView>

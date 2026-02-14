@@ -23,3 +23,19 @@ public enum EnemyType
 {
     Grunt
 }
+
+public sealed class Tower
+{
+    public required TowerType Type { get; init; }
+    public required PointF Position { get; init; }
+
+    public float Range { get; init; }
+    public float Damage { get; init; }
+    public float FireInterval { get; init; }
+    public float CooldownLeft { get; set; }
+}
+
+public enum TowerType
+{
+    BasicArcher
+}

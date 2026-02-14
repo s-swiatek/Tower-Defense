@@ -39,3 +39,17 @@ public enum TowerType
 {
     BasicArcher
 }
+
+public sealed class Projectile
+{
+    public required PointF Position { get; set; }
+    public required PointF Velocity { get; init; }
+    public float TimeLeft { get; set; }
+}
+
+public sealed class PlacementPad
+{
+    public required PointF Center { get; init; } 
+    public float Size { get; init; }            
+    public bool HasTower { get; set; }
+}
